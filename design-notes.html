@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Notes — PLS&amp;</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a href="index.html" class="logo-mark" aria-label="PLS&amp; home">
+    <img src="assets/logo/PLS_Hero_Black.svg" alt="" class="logo-img logo-img-black">
+    <img src="assets/logo/PLS_Hero_Cream.svg" alt="" class="logo-img logo-img-cream">
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="work.html">Our Work</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="page-hero" style="padding-bottom:20px;">
+    <div class="container">
+      <span class="eyebrow">Reference, not part of the public site</span>
+      <h1 style="font-size:clamp(30px,4.5vw,52px);">Design notes &amp; open decisions</h1>
+      <p style="max-width:60ch;margin-top:20px;font-size:15px;">Everything on this page comes from the annotations on the original concept PDF. Nothing here is finished copy, it's a working reference for decisions still to confirm.</p>
+    </div>
+  </div>
+
+  <section class="section-tight">
+    <div class="container">
+      <h3 style="margin-bottom:10px;">Colour palette</h3>
+      <p style="margin-bottom:20px;font-size:14px;">Exact values from the Brand Guidelines (p.19), Pantone 7604 C / 1815 C / Black C.</p>
+      <div class="swatches">
+        <div class="swatch">
+          <div class="swatch-block" style="background:var(--red);"></div>
+          <span class="name">Red</span>
+          <code>#821619</code>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:var(--black);"></div>
+          <span class="name">Black</span>
+          <code>#000000</code>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:var(--cream);"></div>
+          <span class="name">Cream</span>
+          <code>#EDEADF</code>
+        </div>
+        <div class="swatch">
+          <div class="swatch-block" style="background:var(--magenta);"></div>
+          <span class="name">Annotation accent (not in brand guidelines, my own addition for tracking concept notes)</span>
+          <code>#E619AE</code>
+        </div>
+      </div>
+
+      <h3 style="margin-bottom:10px;">Typography</h3>
+      <p style="margin-bottom:20px;font-size:14px;">Per the Brand Guidelines type hierarchy (p.21).</p>
+      <ul class="notes-list">
+        <li><strong>Heading / caption, all caps:</strong> TT Interphases Pro Mono is specified but has not been supplied. Space Mono is standing in until the licensed font file arrives, everything using it is flagged so it's a one-line swap later.</li>
+        <li><strong>Body copy:</strong> EB Garamond, loaded from Google Fonts (free, open licence, matches "EB Garamond - Full Suite" in the guidelines exactly).</li>
+        <li><strong>Hero / annotations / script moments:</strong> Blissful Radiance, the supplied webfont, now used for "let's be friends!", "nice to meet you!", the homepage tagline, and other handwritten brand-voice asides.</li>
+        <li><strong>Title cards</strong> (e.g. the Brotherwolf project overlay): Bookmania SemiBold for the title, Neue Haas Grotesk Display 65 Medium for the small caps sub-line, both supplied and licensed (see the Commercial Type receipt for the Neue Haas licence, web + desktop, up to 15K monthly uniques).</li>
+      </ul>
+
+      <h3 style="margin-bottom:10px;">Footer colour option</h3>
+      <p style="margin-bottom:20px;font-size:14px;">The concept shows three footer colourways. Red is live sitewide, use this to compare against black and cream.</p>
+      <div class="footer-picker" data-footer-picker>
+        <button type="button" aria-pressed="true" data-footer-class="">Red (live)</button>
+        <button type="button" aria-pressed="false" data-footer-class="is-black">Black</button>
+        <button type="button" aria-pressed="false" data-footer-class="is-cream">Cream</button>
+      </div>
+      <footer class="site-footer" data-demo-footer style="padding-top:60px;">
+        <div class="container footer-top">
+          <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">Our Work</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Instagram</a>
+          </nav>
+          <div class="footer-contact">
+            <span class="eyebrow">Ready to work together?</span>
+            <a class="email" href="#">hello@penelopestudio.com.au</a>
+            <p class="addr">2/150 Greville St, Prahran, VIC 3181<span class="script">above Nancymai</span><br>+61 427 933 400</p>
+          </div>
+        </div>
+        <div class="container">
+          <span class="footer-wordmark">
+      <img src="assets/logo/PLS_Hero_Cream.svg" alt="PLS&amp;" class="footer-logo-img footer-logo-cream">
+      <img src="assets/logo/PLS_Hero_Black.svg" alt="PLS&amp;" class="footer-logo-img footer-logo-black">
+      <span class="script">let's be friends!</span>
+    </span>
+        </div>
+        <div class="container footer-bottom">
+          <span>Copyright &copy; PLS&amp; 2026</span>
+        </div>
+      </footer>
+
+      <h3 style="margin:70px 0 24px;">Open decisions from the annotations</h3>
+      <ul class="notes-list">
+        <li class="annot">Hero: real brand video now wired in (autoplay, muted, looped, no controls). Possible logo animation on load is still an open idea, not built.</li>
+        <li class="annot">Statement section: napkin video with text, or the simpler option of text on a plain background (built as the live default here, still a placeholder-free plain background until a napkin video edit exists).</li>
+        <li class="annot">Subscription / Campaign split: each half should play video on hover on desktop. Built as a hover zoom for now, swap in real footage when it exists.</li>
+        <li class="annot">Mobile gallery should run two columns rather than three, already handled in the responsive grid.</li>
+        <li class="annot">Contact email appears two ways in the source file: hello@penelopestudio.com.au (footer, used sitewide here) vs hello@penelopestudios.com.au (contact page mockup, with an "s"). Worth confirming the correct one before launch.</li>
+      </ul>
+
+      <p style="margin-bottom:100px;"><a href="https://www.figma.com/design/PjnrNX1AdeL50LGvnafPaZ/PLS--WebsiteConcept?node-id=0-1&t=UdoTEvUKQ8iwCdr7-1" target="_blank" rel="noopener" style="text-decoration:underline;">View original Figma concept ↗</a></p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="work.html">Our Work</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <div class="footer-contact">
+      <span class="eyebrow">Ready to work together?</span>
+      <a class="email" href="mailto:hello@penelopestudio.com.au">hello@penelopestudio.com.au</a>
+      <p class="addr">2/150 Greville St, Prahran, VIC 3181<span class="script">above Nancymai</span><br>+61 427 933 400</p>
+    </div>
+  </div>
+  <div class="container">
+    <span class="footer-wordmark">
+      <img src="assets/logo/PLS_Hero_Cream.svg" alt="PLS&amp;" class="footer-logo-img footer-logo-cream">
+      <img src="assets/logo/PLS_Hero_Black.svg" alt="PLS&amp;" class="footer-logo-img footer-logo-black">
+      <span class="script">let's be friends!</span>
+    </span>
+  </div>
+  <div class="container footer-bottom">
+    <span>Copyright &copy; PLS&amp; 2026</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
